@@ -3,21 +3,19 @@ Há uma opção de usar o Git Bash,
 uma linha de comando para rodar a linguagem Git
 que oferece ainda um terminal Linux para o computador.
 
-terminal
-pwd
-ls = retorna o conteúdo do diretório atual
-touch = criar um arquivo exemplo  touch teste.md
-echo "bem vindo" >  teste.txt
-cat teste.txt
-clear
-
-ls -l =  Para listar de forma detalha usamos o parâmetro -l
-ls -la =  Para listar os arquivos e diretórios incluindo arquivos ocultos
-man = manual dos comandos exemplo -  man ls -
-whoami  = nome do usuario no Linux
+### Comandoterminal
+ - pwd
+ - ls = retorna o conteúdo do diretório atual
+ - touch = criar um arquivo exemplo  touch teste.md
+ - echo "bem vindo" >  teste.txt
+ - cat = recebe o nome do arquivo como argumento e imprime seu conteúdo  exemplo cat teste.txt
+ - clear = para limpar a tela do terminal. O atalho Ctrl + L tem a mesma função.
+ - ls -l =  Para listar de forma detalha usamos o parâmetro -l
+ - ls -la =  Para listar os arquivos e diretórios incluindo arquivos ocultos
+ - man = manual dos comandos exemplo -  man ls -
+ - whoami  = nome do usuario no Linux
 
 exemplo ls -l
-ls -la
 ```
 drwxr-xr-x 4 vagrant vagrant 4096 Jan 13 19:00 .
 drwxr-xr-x 4 root    root    4096 Jan  6 12:19 ..
@@ -38,4 +36,5 @@ drwx------ 2 vagrant vagrant 4096 Jan  6 12:19 .ssh
 5.  tamanho
 6.  data
 7.  nome
+
 
