@@ -14,6 +14,7 @@ que oferece ainda um terminal Linux para o computador.
  - ls -l =  Para listar de forma detalha usamos o parâmetro -l
  - ls -la =  Para listar os arquivos e diretórios incluindo arquivos ocultos
  - man = manual dos comandos exemplo -  man ls -
+ - help = date --help
  - whoami  = nome do usuario no Linux
  - cd
  - cd ..
@@ -25,6 +26,11 @@ que oferece ainda um terminal Linux para o computador.
  - cat teste?.txt = ler todos arquivos com mais um caractere
  - cat teste*.txt = ler todos arquivos com qualquer caractere
  - cat *.txt = ler todos arquivos com qualquer nome
+ - head alvo = ler as 10 inicio arquivo
+ - head -n (linhas)  alvo = ler as n linhas do inicio arquivo
+ - tail alvo = ler as 10 ultimas linhas
+ - tail -n (linhas)  alvo = ler as n linhas do fim do arquivo
+ -
  - cp copia
  - cp bemvindo.txt (alvo)   mensagem.txt(destino) cp passando o nome do arquivo que desejamos copiar, e o nome do novo arquivo após cópia.
  - mv move
@@ -35,7 +41,47 @@ que oferece ainda um terminal Linux para o computador.
  - posso passar a flag   q (quiet)   para nao apresentar log
  - zip bemvindo.zip *.txt
  - tar -c(create) -z(zip) alvo  > nome.tar.gz (gzip)  padrao do tar ja e recursivo e quiet
+ - tar x(extract) -z < (saida) alvo
+ - tar -cz -f(referencia nome do arquivo)  teste3.tar.gz alvo
+ - tar -xzf teste3.tar.gz
+ - tar -v (verbose quiet) -xzf teste3.tar.gz
+ - o comando tar não compacta, apenas empacota os arquivos
+ - date "+%d/%m/%y"   formata data saida
+ - date "+%d de %B de %Y"  saida
 
+ - vi (editor de codigo no terminal) alvo
+ - i: inclui (na posição atual)
+ - a: adiciona (na posição posterior)
+ - Shift+A: adiciona (fim da linha)
+ - x: remove caracteres (n* x remove *n caracteres)
+ - dd: remove uma linha (n* dd remove *n linhas)
+ - Shift + g = última linha do texto
+ - 5 e depois Shift + g = quisermos ir para a linha 5
+ - $ final da linha atual
+ - procura de palavras
+ - digitamos "/"  + o texto que procuramos
+ - tecla n, ele irá para a próxima ocorrência e com Shift + n
+ - yy copia a linha
+ - p cola
+ ```
+  tar -czf work.tar.gz workspace/
+  O parâmetro -c indica ao comando tar que desejamos criar um novo arquivo.
+  O comando tar apenas empacota vários arquivos em um único arquivo, sem realizar compactação, e por isso passamos o parâmetro -z para indicar que queremos, além de criar um único arquivo, realizar um processo de compactação utilizando o formato .gz. Quando compactamos podemos reduzir o tamanho.
+  O parâmetro -f indica que compactaremos para um arquivo.
+
+  tar -xzf work.tar.gz
+  Para descompactar o arquivo .tar.gz, substituímos o -c que usamos antes por -x, para indicar que iremos extrair os arquivos.
+  O f indica que lemos de um arquivo. E o z, que o arquivo está compactado.
+  O parâmetro z na verdade é ignorado na extração, no man fala que só funciona no creation mode.
+  poderíamos fazer: tar -xf work.tar.gz.
+```
+```
+Um outro formato de compactação junto com o tar é .bzip2.
+Esse formato é mais eficiente na compactação, conseguindo criar arquivos menores. Porém o tempo que o .bzip2 leva para criar o arquivo compactado é maior do que o tempo do gzip.
+Para criar um arquivo .tar compactado com o bzip2,
+substituímos o -z (de gzip) por um -j. O formato que utilizamos é o .tar.bz2.
+
+ exemplo: tar -cjf work.tar.bz2 workspace/
 
 <hr>
 exemplo ls -l

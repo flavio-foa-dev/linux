@@ -1,8 +1,44 @@
-ola pessoal
-ola pessoal
-ola pessoal
-ola pessoalbem vindo dois
-bem vindo dois
-bem vindo dois
-bem vindo dois
-bem vindo dois
+casa de ana luiza do maranhao
+exemplo de página HTML com o código do bloco de anúncios adicionado ao corpo
+<html>
+<head>
+Esse é o cabeçalho da sua página.
+<title>Example HTML page</title>
+</head>
+<body>
+Esse é o corpo da sua página.
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1234567890123456" crossorigin="anonymous"></script>
+<!-- Cabeçalho da página inicial -->
+<ins class="adsbygoogle"
+style="display:inline-block;width:728px;height:90px"
+data-ad-client="ca-pub-1234567890123456"
+data-ad-slot="1234567890"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</body>
+</html>
+Observação: esse código é apenas um exemplo. Não o utilize no HTML do seu site.
+Posicionar os anúncios no seu site com HTML
+Assim como os outros elementos do seu site (imagens, parágrafos etc.), você pode alterar a posição dos anúncios do Google usando tags HTML (<div>, <table> etc.). Por exemplo, se você inserir o código de anúncio dentro das tags HTML <div align="center"> e </div>, seus anúncios aparecerão no centro da página.
+
+<html>
+<head>
+Esse é o cabeçalho da sua página.
+<title>Example HTML page</title>
+</head>
+<body>
+Esse é o corpo da sua página.
+<div align="center">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1234567890123456" crossorigin="anonymous"></script>
+<!-- Cabeçalho da página inicial -->
+<ins class="adsbygoogle"
+style="display:inline-block;width:728px;height:90px"
+data-ad-client="ca-pub-1234567890123456"
+data-ad-slot="1234567890"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</body>
+</html>
