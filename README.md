@@ -21,6 +21,21 @@ que oferece ainda um terminal Linux para o computador.
  - / raiz do nosso hd linux
  - rmdir = apagar diretorio
  - rm apagar arquivo
+ - rm -r remove recursivamente
+ - cat teste?.txt = ler todos arquivos com mais um caractere
+ - cat teste*.txt = ler todos arquivos com qualquer caractere
+ - cat *.txt = ler todos arquivos com qualquer nome
+ - cp copia
+ - cp bemvindo.txt (alvo)   mensagem.txt(destino) cp passando o nome do arquivo que desejamos copiar, e o nome do novo arquivo após cópia.
+ - mv move
+ - cp -r copia recorsiv
+ - zip nome.zip alvo
+ - zip -r nome.zip alvo
+ - unzip -l mostra o que tem dentro do zip
+ - posso passar a flag   q (quiet)   para nao apresentar log
+ - zip bemvindo.zip *.txt
+ - tar -c(create) -z(zip) alvo  > nome.tar.gz (gzip)  padrao do tar ja e recursivo e quiet
+
 
 <hr>
 exemplo ls -l
