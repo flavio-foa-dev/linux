@@ -1,4 +1,4 @@
-# a - linux
+# a - linux conhecendo e utilizando o terminal
 Há uma opção de usar o Git Bash,
 uma linha de comando para rodar a linguagem Git
 que oferece ainda um terminal Linux para o computador.
@@ -63,6 +63,7 @@ que oferece ainda um terminal Linux para o computador.
  - tecla n, ele irá para a próxima ocorrência e com Shift + n
  - yy copia a linha
  - p cola
+
  ```
   tar -czf work.tar.gz workspace/
   O parâmetro -c indica ao comando tar que desejamos criar um novo arquivo.
@@ -75,14 +76,14 @@ que oferece ainda um terminal Linux para o computador.
   O parâmetro z na verdade é ignorado na extração, no man fala que só funciona no creation mode.
   poderíamos fazer: tar -xf work.tar.gz.
 ```
+
 ```
 Um outro formato de compactação junto com o tar é .bzip2.
 Esse formato é mais eficiente na compactação, conseguindo criar arquivos menores. Porém o tempo que o .bzip2 leva para criar o arquivo compactado é maior do que o tempo do gzip.
 Para criar um arquivo .tar compactado com o bzip2,
 substituímos o -z (de gzip) por um -j. O formato que utilizamos é o .tar.bz2.
-
  exemplo: tar -cjf work.tar.bz2 workspace/
-
+```
 <hr>
 exemplo ls -l
 ```
@@ -107,5 +108,7 @@ drwx------ 2 vagrant vagrant 4096 Jan  6 12:19 .ssh
 7.  nome
 
 <hr>
+
+# b - linux programas, processos e pacotes
 
 
