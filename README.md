@@ -110,5 +110,10 @@ drwx------ 2 vagrant vagrant 4096 Jan  6 12:19 .ssh
 <hr>
 
 # b - linux programas, processos e pacotes
+- Controle dos processos rodando na máquina
+- Variáveis de ambiente e o PATH
+- Gerenciando pacotes com o APT
+- Sistema de permissões
+- SSH e SCP para comunicação remota
 
 
