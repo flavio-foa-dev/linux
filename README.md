@@ -114,3 +114,10 @@ drwx------ 2 vagrant vagrant 4096 Jan  6 12:19 .ssh
 - Gerenciando pacotes com o APT
 - Sistema de permissões
 - SSH e SCP para comunicação remota
+
+- ps = mostra os processos deste terminal
+- ps -e = mostra todos os processos pc
+- pf -ef = mostra processos detalhes
+- grep = filtra as linhas
+- kill pid = mata programa, dando chance
+- kill -9 pid = mata programa sem da chance
