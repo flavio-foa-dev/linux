@@ -167,9 +167,10 @@ d = marca que e um diretorio
 
 
 ### trocar usuario
-passwd = muda senha usuario
-sudo passwd = adiciona senha ao root
-whoami = mostra username
-su <nome usuario> = muda para usuario logar com outro usuário
-adduser <nome novo ususario> = adiciona um novo usuario
+- passwd = muda senha usuario
+- sudo passwd = adiciona senha ao root
+- whoami = mostra username
+- su <nome usuario> = muda para usuario logar com outro usuário
+- adduser <nome novo ususario> = adiciona um novo usuario
+- sudo adduser nico = add new user
 
