@@ -145,7 +145,10 @@ drwx------ 2 vagrant vagrant 4096 Jan  6 12:19 .ssh
 - chmod +<perm> <arquivo >= adiciona a permissao
 - chmod -<perm> <arquivo> = remove a permissao
 - chmod +rwx
-- chmod -rwx.
+- chmod u-rwx = tiro as permissoes do usuario
+- chmod g-rwx. = tiro as permissoes do grupo
+- chmod o-rwx. = tiro as permissoes dos outros users
+
 
 d = marca que e um diretorio
 1. r (leitura)
@@ -156,5 +159,17 @@ d = marca que e um diretorio
 6. outros usuarios
 
 ### locate e updatedb
-sudo updatedb
-sudo locate firefox
+- sudo updatedb
+- sudo locate firefox
+- sudo locate *.txt
+- which = mostra local do executal do programa
+- which firefox = /snap/bin/firefox
+
+
+### trocar usuario
+passwd = muda senha usuario
+sudo passwd = adiciona senha ao root
+whoami = mostra username
+su <nome usuario> = muda para usuario logar com outro usuário
+adduser <nome novo ususario> = adiciona um novo usuario
+
