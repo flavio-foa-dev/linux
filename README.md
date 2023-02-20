@@ -115,9 +115,25 @@ drwx------ 2 vagrant vagrant 4096 Jan  6 12:19 .ssh
 - Sistema de permissões
 - SSH e SCP para comunicação remota
 
-- ps = mostra os processos deste terminal
+- ps = mostra os processos que estão em execução no bash atual
 - ps -e = mostra todos os processos pc
 - pf -ef = mostra processos detalhes
 - grep = filtra as linhas
 - kill pid = mata programa, dando chance
 - kill -9 pid = mata programa sem da chance
+- kill -stop pid
+- kill -cont pid
+- killall = permite matar todos os processos de um mesmo programa, com um mesmo nome, sem precisar digitar seus ID's
+- cat google.txt | grep "Larry Page and Sergey Brin" = busca palavras em arquivos
+- top = mostra consumo dos processos
+- top -u name = mostrar apenas os processos de um determinado usuário
+- top -p pid = podemos acompanhaer um processo
+- d = alterar esse tempo basta pressionar d enquanto estiver rodando o top, inserir o valor desejado e pressionar a tecla Enter
+
+### Jobs, bg, fg, pstree, &
+- <programa> = abrimos o programa
+- CTRL + Z = nós paramos temporariamente o processo.
+- jobs = mostra os processos que estão sendo executados dentro do bash;
+- fg e bg = jogam os processos para foreground e background, respectivamente;
+- <programa> & = abre o <programa> diretamente em background;
+- pstree = mostra todos os processos em um gráfico de árvore.
