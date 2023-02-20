@@ -1,0 +1,4 @@
+echo "iniciando o backup"
+zip b1.zip -r home ./src
+
+echo "terminado o backup"

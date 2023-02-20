@@ -137,3 +137,24 @@ drwx------ 2 vagrant vagrant 4096 Jan  6 12:19 .ssh
 - fg e bg = jogam os processos para foreground e background, respectivamente;
 - <programa> & = abre o <programa> diretamente em background;
 - pstree = mostra todos os processos em um gráfico de árvore.
+
+### sh e chmod
+- gedit <nome> = cria um script
+- sh <nome> = executa script sem a permissao x
+- ./(local)<nome> = executa script com a permissao x
+- chmod +<perm> <arquivo >= adiciona a permissao
+- chmod -<perm> <arquivo> = remove a permissao
+- chmod +rwx
+- chmod -rwx.
+
+d = marca que e um diretorio
+1. r (leitura)
+2. w (escrita)
+3. x (execucao)
+4. dono
+5. grupo
+6. outros usuarios
+
+### locate e updatedb
+sudo updatedb
+sudo locate firefox
