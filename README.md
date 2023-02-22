@@ -165,7 +165,6 @@ d = marca que e um diretorio
 - which = mostra local do executal do programa
 - which firefox = /snap/bin/firefox
 
-
 ### trocar usuario
 - passwd = muda senha usuario
 - sudo passwd = adiciona senha ao root
