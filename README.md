@@ -173,3 +173,27 @@ d = marca que e um diretorio
 - adduser <nome novo ususario> = adiciona um novo usuario
 - sudo adduser nico = add new user
 
+### PATH
+- env = mostra todas as variaveis de ambiente
+- env | grep PATH
+- PATH = variavem de ambiente que podemos addicionar path do script
+- PATH=$PATH/home/flavio/src = bashrc
+- gedit .bashrc &
+Esse arquivo é carregado toda vez que abrimos uma aba nova no Terminal.
+Ele já possui vários comandos.
+adicionar a seguinte linha e salvar:
+
+PATH=$PATH:/home/local/src
+
+A variável PATH, guarda informações de onde estão nossos arquivos executáveis para que possamos executar um comando sem a necessidade de digitar o caminho absoluto
+
+- wc = para contar o número de palavras
+- -w = para indicar que desejamos contar apenas o número de palavras que existem no arquivo.  *.txt ou contagem em todos os arquivos .txt do nosso diretório atual.
+- -c = o número de caracteres
+- -l = para linhas.
+- exemplo = ps -e | wc - l
+
+### PS1 Alterando a configuração do prompt
+- ps1 = Uma outra variável de ambiente
+
+### instalacao de programa APT
