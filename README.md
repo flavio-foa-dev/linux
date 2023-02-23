@@ -227,5 +227,14 @@ Resumindo: O parâmetro -f tenta fazer um fix (conserta) em pacotes quebrados.
 - sudo service <programa> status = verifica o status de um servico
 
 ### instalacao a parti do codigo fonte
+bildar um projeto
 
+1. ./configure
+2. make
+3. sudo make install
 
+### acesso remoto
+- ssh = logar em uma outra maquina
+- exemplo ssh fulano@ip
+- ssh -x  = o que for feito na maquina la , mostra na minha maquina
+- scp -r(recursiva) <nome arquivo> alvo@ip = copia arquivo para a maquina alvo:diretorio(~/)
