@@ -197,3 +197,29 @@ A variável PATH, guarda informações de onde estão nossos arquivos executáve
 - ps1 = Uma outra variável de ambiente
 
 ### instalacao de programa APT
+- apt = sistema de gerenciamento de pacotes central de programas do ubuntu
+- sudo apt-get update = busca uma lista das versões atualizadas dos programas
+- apt-cache search <programa> procura os programas disponíveis para instalação
+- sudo apt-get install <programa> instala os pacotes
+- sudo apt-get remove <programa> remove os pacotes
+- show, mostra informacoes sobre um determinado pacote exemplo apt-cache show mysql-server-5.6
+
+Podemos instalar programas que não estão disponibilizados na central de programas do Ubuntu, ou seja, sem o uso do apt
+Para isso nós baixamos um pacote desse programa em um site e depois o instalamos. O formato desse pacote é dpkg, que é um arquivo com a extensão .deb.
+exemplpo
+- sudo dpkg -i(install) <programa>.deb
+- sudo dpkg -r(remove) <programa>
+
+No caso do Google Chrome, iremos receber alguns erros, pois o pacote depende de outros pacotes e o dpkg não resolveu isso pra gente. Para baixar as dependências e fazer com que o Google Chrome funcione corretamente, pedimos para o apt-get tentar resolver esse problema:
+-  sudo apt-get -f install
+-  A opção -f no comando apt-get tem a função de tentar corrigir possíveis pacotes quebrados que podem ser resultados de uma instalação mal sucedida causada por exemplo por uma queda de energia, instalação interrompida ou ainda pela instalação de um programa instável que possa ter gerado problemas entre dependências de pacotes.
+
+Resumindo: O parâmetro -f tenta fazer um fix (conserta) em pacotes quebrados.
+
+1. Via apt: quando o programa já está disponibilizado na central do Sistema Operacional Linux.
+2. Via dpkg: quando baixamos pelo navegador da internet um pacote .deb do programa.
+
+### scripts init e services
+- sudo service <programa> stop = para um servico
+- sudo service <programa> start = inicia um servico
+- Os scripts dentro do diretório /etc/init.d são os programas que são executados no startup da máquina.
