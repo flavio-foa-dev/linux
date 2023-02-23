@@ -223,3 +223,9 @@ Resumindo: O parâmetro -f tenta fazer um fix (conserta) em pacotes quebrados.
 - sudo service <programa> stop = para um servico
 - sudo service <programa> start = inicia um servico
 - Os scripts dentro do diretório /etc/init.d são os programas que são executados no startup da máquina.
+- ls /etc/init.d/ = veja quais serviços o seu computador possui.
+- sudo service <programa> status = verifica o status de um servico
+
+### instalacao a parti do codigo fonte
+
+
